@@ -23,35 +23,90 @@ body {
 
 .content {
   position: fixed;
-  bottom: 0;
+  top:0;
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
   width: 100%;
-  padding: 20px;
+  padding: 0px;
+  text-align: center;
 }
-
 #myBtn {
   width: 200px;
   font-size: 18px;
-  padding: 10px;
+  padding: 20px;
   border: none;
   background: #000;
   color: #fff;
   cursor: pointer;
+  color:;
 }
 
 #myBtn:hover {
   background: #ddd;
   color: black;
 }
+  #mySidenav a { margin-top:15%;
+    position: absolute;
+  left: -30px;
+  transition: 0.3s;
+  padding: 20px;
+  width: 200px;
+  height: 50px;
+  text-decoration: none;
+  font-size: 50px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  box-sizing: content-box;  
+
+}
+
+
+#mySidenav a:hover {
+
+  left:0px;
+}
+
+#about { 
+  top: 0px;
+  background-color: #4CAF50;
+}
+
+#blog {
+  top: 100px;
+  background-color: #2196F3;
+}
+
+#projects {
+  top: 200px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 300px;
+  background-color: #555
+}
+}
 </style>
 </head>
 <body>
 
-<video autoplay muted loop id="myVideo">
+<video autoplay muted  id="myVideo">
   <source src="background1.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
+
+<div class="content">
+  <p style="font-size:+3vw;">WELCOME TO THE WORLD OF POSSIBLITIES</p>
+</div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="#" id="about">About</a>
+  <a href="#" id="blog">Blog</a>
+  <a href="#" id="projects">Projects</a>
+  <a href="#" id="contact">Contact</a>
+
+</div>
+
 
 
 <script>
@@ -68,6 +123,9 @@ function myFunction() {
   }
 }
 </script>
+
+
+
 
 </body>
 </html>
